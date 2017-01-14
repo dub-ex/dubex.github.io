@@ -1,0 +1,111 @@
+
+/* custom global font */
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: transparent;
+  height: 100%;
+  width:100%;
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  background-color: transparent;
+  letter-spacing: 5px;
+  border: transparent;
+  height: 90px;
+}
+
+.navbar-brand {
+  font-size: 8px;
+  letter-spacing: 2px;
+}
+
+.navbar-default {
+  text-align: right;
+}
+
+.navbar-left {
+  text-align:left;
+}
+
+.navbar-customlogo {
+  font-size:8px;
+  color: black;
+  letter-spacing: 1.5px;
+}
+
+.active {
+  font-style: italic;
+}
+
+.p2 {
+  font-style: italic;
+}
+
+/* change navbar text color to black */
+.nav.navbar-nav.navbar-right li a {
+  color:black;
+}
+
+/* set container padding on sides */
+.container-fluid {
+  padding-right: 10%;
+  padding-left: 5%;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 600px}
+
+.person {
+   display:block;
+   margin: auto;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 500px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;}
+}
+
+
+/* img fade on hover */
+img {
+  opacity: 1.0;
+  transition: opacity 0.8s ease-in-out;
+  -moz-transition: opacity 0.8s ease-in-out;
+  -webkit-transition: opacity 0.8s ease-in-out;
+}
+img:hover {
+  opacity: 0.7;
+  transition: opacity .8s ease-in-out;
+  -moz-transition: opacity .8s ease-in-out;
+  -webkit-transition: opacity .8s ease-in-out;
+}​
+
+.outside {
+background-color: transparent;
+color:transparent;
+position:relative;
+height:65%;
+}
+
+.inside {
+position: absolute;
+top: 50%;
+left:50%;
+transform: translate(-50%,-50%);
+}
+
+.inside p {
+font-size: 200px;
+color:white;
+font-weight: 300;
+letter-spacing:50px;
+opacity: 0.8;
+}
