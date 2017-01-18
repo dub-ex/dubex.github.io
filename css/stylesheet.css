@@ -18,13 +18,27 @@ body {
   height: 90px;
 }
 
+.navbar-header img {
+   height: 5vmax;
+}
+
+.navbar-collapse {
+    font-size: 1.3vmin;
+}
+
+.navbar-collapse.in {
+  font-size: 12pt;
+  background-color:white;
+}
+
 .navbar-brand {
   font-size: 8px;
   letter-spacing: 2px;
+
 }
 
 .navbar-default {
-  text-align: right;
+  text-align: auto;
 }
 
 .navbar-left {
@@ -32,9 +46,13 @@ body {
 }
 
 .navbar-customlogo {
-  font-size:8px;
+  font-size:1.0vh;
   color: black;
   letter-spacing: 1.5px;
+}
+
+.navbar-customlogo img {
+  height:1vh;
 }
 
 .active {
@@ -103,7 +121,7 @@ transform: translate(-50%,-50%);
 }
 
 .inside p {
-font-size: 200px;
+font-size: 10vw;
 color:white;
 font-weight: 300;
 letter-spacing:50px;
