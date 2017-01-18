@@ -1,64 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
-  <title>Expatriate Student Association - UDUB</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="./css/stylesheet.css" rel="stylesheet">
+	<title>Expatriate Student Association - UDUB</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="./css/stylesheet.css" rel="stylesheet">
+	<style>
+	 
+	   html { 
+	       background-image: url('./images/background.jpg');
+	       background-repeat:no-repeat;
+	       -webkit-background-size:cover;
+	       -moz-background-size:cover;
+	       -o-background-size:cover;
+	       background-size:cover;
+	       height: 100%;
+	       width:100%;
+	   }
 
-  <style>  
-  	html { 
-     	background-image: url('./images/background.jpg');
-     	background-repeat:no-repeat;
-		-webkit-background-size:cover;
-		-moz-background-size:cover;
-		-o-background-size:cover;
-		background-size:cover;
-		height: 100%;
-		width:100%;
- 	}
-  </style>
+	   .content2 {
+	     position: absolute;
+	     top: 50%;
+	     left: 50%;
+	     transform: translate(-50%, -50%);
+	     font-size: 11vmin;
+	     line-height: 105px;
+	     font-family: 'Lato', sans-serif;
+	     color: #ecf0f1;
+	     height: 160px;
+	     overflow:hidden;
+	     letter-spacing: 20px;
+
+	   }
+
+	   .visible {
+	     font-weight:300;
+	     overflow:hidden;
+	     height:105px;
+	     padding:0 40px;
+	   }
+	     &:before {
+	       left: 0;
+	       line-height:105px;
+	     }
+	     &:after {
+	       position:absolute;
+	       right: 0;
+	       line-height:105px;
+	     }
+	     &:after, &:before {
+	       position:absolute;
+	       top:0;
+	       color:#16a085;
+	       font-size:105px;
+	       -webkit-animation-name: opacity;
+	       -webkit-animation-duration: 2s;
+	       -webkit-animation-iteration-count: infinite;
+	       animation-name: opacity;
+	       animation-duration: 2s;
+	       animation-iteration-count: infinite;
+	     
+	     }
+
+	     .content2 ul {
+	         margin-top:0;
+	         padding-left:110px;
+	         text-align:left;
+	         list-style:none;
+	         -webkit-animation-name: change;
+	         -webkit-animation-duration: 10s;
+	         -webkit-animation-iteration-count: infinite;
+	         animation-name: change;
+	         animation-duration: 10s;
+	         animation-iteration-count: infinite;
+	       }
+
+	   .content2 ul li {
+	       text-align: center;
+	       line-height:105px;
+	       margin:0;
+	       }
+
+	   @-webkit-keyframes opacity {
+	     0%, 100% {opacity:0;}
+	     50% {opacity:1;}
+	   }
+
+	   @-webkit-keyframes change {
+	     0%, 12%, 100% {transform:translateY(0);}
+	     17%,29% {transform:translateY(-25%);}
+	     34%,46% {transform:translateY(-50%);}
+	     51%,63% {transform:translateY(-75%);}
+	     68%,80% {transform:translateY(-50%);}
+	     85%,97% {transform:translateY(-25%);}
+	   }
+
+	   @keyframes opacity {
+	     0%, 100% {opacity:0;}
+	     50% {opacity:1;}
+	   }
+
+	   @keyframes change {
+	     0%, 12%, 100% {transform:translateY(0);}
+	     17%,29% {transform:translateY(-25%);}
+	     34%,46% {transform:translateY(-50%);}
+	     51%,63% {transform:translateY(-75%);}
+	     68%,80% {transform:translateY(-50%);}
+	     85%,97% {transform:translateY(-25%);}
+	   }
+
+	</style>
 </head>
-
 <body>
-	<!-- NAVBAR --> 
+	<!-- NAVBAR -->
 	<nav class="navbar navbar-default">
-	  <div class="container-fluid">
-	    <div class="navbar-header">
-	    	<a href="./index.html" class="navbar-left navbar-customlogo"><img src="./images/logo.png" height=80px><br><br>THE EXPATRIATE STUDENT ASSOCIATION • UNIVERSITY OF WASHINGTON</a>
-		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-	      </button>  
-	      
-	    </div>
-
-	    <div class="collapse navbar-collapse" id="myNavbar">
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="./whatisdubex.html">WHAT IS DUBEX?</a></li> <!-- can add div class="active" -->
-	        <li><a href="#">PROJECTS</a></li>
-	        <li><a href="./team.html">TEAM</a></li>
-	        <li><a href="./contact.html">CONTACT</a></li>
-	        <li><a href="./store.html">STORE</a></li>
-	      </ul>
-	    </div>
-	  </div>
-	</nav>
-
-	<!-- center text -->
-
-	<div class="outside">
-		<div class="inside"> 
-		<p>GLOBAL</p>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-left navbar-customlogo navbar" href="./index.html"><img src="./images/logo.png"><br>
+				<br>
+				THE EXPATRIATE STUDENT ASSOCIATION • UNIVERSITY OF WASHINGTON</a> <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="./whatisdubex.html">WHAT IS DUBEX?</a>
+					</li><!-- can add div class="active" -->
+					<li>
+						<a href="#">PROJECTS</a>
+					</li>
+					<li>
+						<a href="./team.html">TEAM</a>
+					</li>
+					<li>
+						<a href="./contact.html">CONTACT</a>
+					</li>
+					<li>
+						<a href="./store.html">STORE</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-
-	</div>
+	</nav><!-- center text -->
+	<div class="content2">
+		<div class="visible">
+			<ul>
+				<li>GLOBAL</li>
+				<li>NOMAD</li>
+				<li>DIVERSE</li>
+				<li>INTERNATIONAL</li>
+			</ul>
+		</div>
+	</div><!-- <div class="outside">
+        <div class="inside"> 
+        <p>GLOBAL</p>
+        </div>
+    </div> -->
 </body>
 </html>
